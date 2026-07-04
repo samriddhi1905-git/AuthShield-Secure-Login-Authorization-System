@@ -1,0 +1,12 @@
+package authsystem.repository;
+
+import authsystem.entity.LoginRequest;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface LoginRequestRepository
+        extends JpaRepository<LoginRequest, Long> {
+
+    Optional<LoginRequest> findByToken(String token);
+}

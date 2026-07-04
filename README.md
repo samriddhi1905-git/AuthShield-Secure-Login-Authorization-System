@@ -123,30 +123,27 @@ Login History
 ---
 
 # 📸 Screenshots
-
 ## Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](login.png)
 
 ---
 
 ## Register Page
 
-![Register Page](screenshots/register.png)
+![Register Page](register.png)
 
 ---
 
 ## Waiting For Approval
 
-![Waiting Page](screenshots/waiting.png)
+![Waiting Page](Waiting.png)
 
 ---
 
 ## Dashboard
 
-![Dashboard](screenshots/dashboard.png)
-
----
+![Dashboard](dashboard.png)
 
 # 🚀 Future Enhancements
 

@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
+import org.springframework.http.HttpMethod;
 @Configuration
 public class SecurityConfig {
 
@@ -31,7 +31,11 @@ public class SecurityConfig {
                 )
 
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(
+                        .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+
+.requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+
+.requestMatchers(
     "/auth/register",
     "/auth/login",
     "/auth/approve/**",
@@ -40,7 +44,6 @@ public class SecurityConfig {
     "/auth/dashboard/**",
     "/history/**"
 ).permitAll()
-
                         .anyRequest().authenticated()
                 )
 
